@@ -29,7 +29,7 @@ export function USP({ id = "why-us" }) {
           We combine certified expertise, proven delivery frameworks, and 24/7
           support to help you get the most out of IBM Sterling.
         </p>
-        <div className="mx-auto mt-16 flex justify-between gap-10">
+        <div className="mx-auto mt-16 flex flex-col md:flex-row items-stretch gap-6 md:gap-10">
           {bullets.map((b) => (
             <div
               key={b.title}

@@ -52,7 +52,11 @@ export function Hero({ id = "home" }) {
         </motion.div>
       </div>
 
-      <img src="/ibm-sterling-illustration.png" alt="test" />
+      <img
+        src="/ibm-sterling-illustration.png"
+        className="hidden md:block"
+        alt="test"
+      />
     </section>
   );
 }
