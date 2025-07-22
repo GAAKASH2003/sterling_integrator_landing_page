@@ -58,13 +58,11 @@ export function Services({ id = "services" }) {
           {services.map(({ icon: Icon, title, desc }) => (
             <div
               key={title}
-              className="rounded-2xl border bg-white p-8 shadow-sm hover:scale-105 transition duration-300 shadow-blue-600 text-center"
+              className="rounded-2xl border text-blue-600 bg-white p-8 shadow-sm hover:scale-105 transition duration-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 shadow-blue-600 text-center"
             >
-              <Icon className="h-8 w-8 text-blue-600 mx-auto" />
-              <h3 className="mt-4 text-xl font-semibold text-blue-600">
-                {title}
-              </h3>
-              <p className="mt-2 text-gray-600">{desc}</p>
+              <Icon className="h-8 w-8  mx-auto" />
+              <h3 className="mt-4 text-xl font-semibold">{title}</h3>
+              <p className="mt-2 text-black">{desc}</p>
             </div>
           ))}
         </div>

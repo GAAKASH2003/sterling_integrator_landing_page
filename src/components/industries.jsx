@@ -28,12 +28,10 @@ export function Industries({ id = "industries" }) {
           {industries.map((ind) => (
             <div
               key={ind.name}
-              className="rounded-2xl border bg-white p-6  shadow-sm hover:scale-105 transition duration-300 shadow-blue-600 text-center"
+              className="rounded-2xl border bg-white p-6 text-blue-600  shadow-sm hover:scale-105 transition duration-300 hover:bg-blue-600 hover:text-white hover:border-blue-600 shadow-blue-600 text-center"
             >
-              <h3 className="text-lg font-semibold text-blue-600">
-                {ind.name}
-              </h3>
-              <p className="mt-2 text-sm text-gray-600">{ind.desc}</p>
+              <h3 className="text-lg font-semibold  ">{ind.name}</h3>
+              <p className="mt-2 text-sm text-black">{ind.desc}</p>
             </div>
           ))}
         </div>
